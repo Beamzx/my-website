@@ -1,0 +1,118 @@
+:root {
+    --black-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to left, #74ebd5, #9face6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Login-sign {
+    border: 3px solid var(--black-color);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.headlogin {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 27px;
+    border-bottom: 3px solid var(--black-color);
+    padding-bottom: 10px;
+}
+
+.Login-sign form input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid var(--black-color);
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-weight: bold;
+}
+
+.Login-sign form input:focus {
+    background: transparent;
+    color: var(--black-color);
+}
+
+.Login-sign form input:active {
+    transform: scale(1.05);
+}
+
+.Login-sign form label {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.Login-sign form button {
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid var(--black-color);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Login-sign form button:hover {
+    transform: scale(1.05);
+    background-color: var(--black-color);
+    color: white;
+}
+
+.Login-sign p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.Login-sign a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive for larger tablets and small laptops */
+@media (min-width: 768px) {
+    .Login-sign {
+        padding: 30px;
+    }
+
+    .headlogin {
+        font-size: 32px;
+    }
+
+    .Login-sign form label,
+    .Login-sign form button {
+        font-size: 20px;
+    }
+}
+
+/* Responsive for large screens */
+@media (min-width: 1200px) {
+    .Login-sign {
+        max-width: 450px;
+    }
+}
