@@ -29,7 +29,7 @@
 
       // ไปหน้า index.html หลัง 1 วินาที
       setTimeout(() => {
-        window.location.href = "../home/index.html";
+        window.location.href = "home.html";
       }, 1000);
     } else {
       message.textContent = "❌ ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";
